@@ -1,5 +1,11 @@
 package com.bilgeadam.designpattern.creation;
 
-public class Deneme {
+public interface Deneme {
+	void denemeMethod();
+	
+	default void method() {
+		System.out.println("Deneme");
+		
+	}
 	
 }
